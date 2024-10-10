@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurants</title>
+</head>
+<body>
+   
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+             <a href="#">RsR</a>
+         </div>
+         <ul class="nav-links nav-links-min">
+             <li><a href="#home">Home</a></li>
+             <li><a href="#Service">Services</a></li>
+             <li><a href="#About">About</a></li>
+             <li><a href="#Contact">Contact</a></li>
+         </ul>
+        
+     </nav>
+    <div class="container">
+        <h1>Restaurants </h1>
+       <div class="box">
+     <section>
+        <div class="info">
+            <h1>Customer Infarmation</h1>
+            <div class="form-group detail">
+                <label for="itemName"> Name</label>
+                <input type="text" id="name" placeholder="Enter here name" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Mobile</label>
+                <input type="phone" id="phone" placeholder="Enter phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Email</label>
+                <input type="email" id="email" placeholder="Enter price" required>
+            </div>
+            <button id="btn">Add Item</button>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div class="item">
+            <h1>Menu </h1>
+          <div id="items">
+            <div class="form-group form-second">
+                <label for="quantity">Samosa(Rs 15)</label>
+                <input type="text" id="samosa" placeholder="Enter Quantity" >
+            </div>
+           
+            <!-- < Samosa(Rs 15): <input type="text" id="samosa"><br><br><br>
+                Chai(Rs 10): <input type="text" id="samosa"><br><br><br>
+                Jalebi(Rs 20): <input type="text" id="samosa"><br><br><br>-->
+          </div>
+        </div>
+      </section>
+
+      <section>
+         <div class="bill">
+            <h1>Your Bill</h1>
+                <div class="form-group form-second">
+                    <label for="itemName"> Name</label>
+                    <span id="yourname"> </span>
+                </div>
+                <div class="form-group form-second">
+                    <label for="itemName"> Phone</label>
+                    <span id="yourphone"> </span>
+                </div>
+                <div class="form-group form-second">
+                    <label for="itemName">Email</label>
+                    <span id="youremail"> </span>
+                </div>
+            
+
+
+               <table class="billing-table">
+                <tr>
+                  <th class="menu">Menu</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Amount</th>
+                </tr>
+                <tbody id="bill">
+               <!-- <tr>
+                  <td class="menu">Samosa</td>
+                  <td>Rs 15</td>
+                  <td>2</td>
+                  <td>15*1=15</td>
+                </tr>-->
+              </tbody>
+              </table>
+         </div>
+
+         <div class="total-amount" >Total Amount: Rs <span id="totalAmount">0.00 </span> </div>
+
+      </section>
+    </div> 
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
